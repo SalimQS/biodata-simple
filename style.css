@@ -1,0 +1,154 @@
+:root {
+	--bg: #0f0f13;
+	--text: #e2e2e9;
+	--primary: #a855f7;
+	--secondary: #9ca3af;
+	--card-bg: #1a1a22;
+	--shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+	line-height: 1.7;
+}
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+header.header {
+	background-color: var(--card-bg);
+	box-shadow: var(--shadow);
+	border-radius: 16px;
+	padding: 1.5rem 2rem;
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profile-info {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.profile-photo {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--primary);
+}
+
+h1 {
+	font-size: 2rem;
+	color: var(--primary);
+}
+
+.subtitle {
+	color: var(--secondary);
+	font-size: 1rem;
+}
+
+h2 {
+	color: var(--primary);
+	font-size: 1.5rem;
+	margin-bottom: 0.75rem;
+	border-left: 4px solid var(--primary);
+	padding-left: 10px;
+}
+
+.card {
+	background: var(--card-bg);
+	padding: 1.5rem 2rem;
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+	margin-top: 1.5rem;
+}
+
+ul,
+ol {
+	margin-top: 0.5rem;
+	padding-left: 1.25rem;
+}
+
+li {
+	margin-bottom: 0.4rem;
+}
+
+.btn {
+	display: inline-block;
+	background-color: var(--primary);
+	color: white;
+	padding: 0.6rem 1.2rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background-color: #562585ff;
+}
+
+.btn-outline {
+	background-color: transparent;
+	border: 2px solid var(--primary);
+	color: var(--primary);
+}
+
+.btn-outline:hover {
+	background-color: var(--primary);
+	color: white;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem 0;
+	color: var(--secondary);
+	font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+	.profile-info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header.header {
+		justify-content: center;
+	}
+
+	.profile-photo {
+		width: 90px;
+		height: 90px;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+	}
+}
+
+.about>p {
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portofolio Satria Salim</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="container header">
+            <div class="profile-info">
+                <img src="https://sia.uniska-bjm.ac.id/images/berkas4/92412388_20240804_100801.jpg" alt="Profile Picture" class="profile-photo">
+                <div>
+                    <h1>Satria Salim</h1>
+                    <p class="subtitle">Software Engineer | Web Developer | Tech Enthusiast</p>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="about card">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Halo! Saya Satria Salim, seorang mahasiswa Universitas Islam Kalimantan (UNISKA) yang memiliki rasa ingin tahu tinggi dan semangat besar untuk terus belajar. Meskipun saya memiliki minat utama di dunia programming dan teknologi, saya juga senang menjelajahi berbagai bidang baru yang dapat memperluas wawasan dan cara berpikir saya.
+                </p>
+                <p>
+                    Bagi saya, proses belajar tidak berhenti di satu titik. Saya percaya bahwa setiap pengalaman dan pengetahuan baru, sekecil apa pun, dapat membantu saya menjadi pribadi yang lebih berkembang dan adaptif. Dengan semangat tersebut, saya berusaha untuk terus tumbuh — baik sebagai individu maupun sebagai calon profesional di dunia yang terus berubah ini.
+                </p>
+            </section>
+            <section class="interests card">
+                <h2>Minat & Hobi Saya</h2>
+                <ul>
+                    <li>Website dan desktop app development</li>
+                    <li>UI/UX Design dan optimasi performa website</li>
+                    <li>Membaca manga dan bersepeda :D</li>
+                </ul>
+            </section>
+            <section class="skills card">
+                <h2>Keterampilan yang Dipelajari</h2>
+                <ol>
+                    <li>HTML, CSS, dan Javascript</li>
+                    <li>Tailwind, Bootstrap</li>
+                    <li>PHP beserta frameworknya, Laravel</li>
+                    <li>REST API, Database Design, dan Git</li>
+                </ol>
+            </section>
+            <section class="contact card">
+                <h2>Hubungi Saya</h2>
+                <div class="links">
+                    <a href="https://github.com/SalimQS" target="_blank" class="btn">GitHub</a>
+                    <a href="mailto:satria.salim.qs@gmail.com" class="btn btn-outline">Emai me!</a>
+                </div>
+            </section>
+            <section class="button card">
+                <button id="suprise-me-button" class="btn full-width text-center">Tampilkan Fakta Menarik</button>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="year"></span> Satria Salim.</p>
+        </footer>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            document.getElementById('suprise-me-button').addEventListener('click', function() {
+                const facts = [
+                    "Aku suka melakukan service ringan pada barang-barang elektronik :D.",
+                    "Aku suka melakukan perakitan sepeda, ask me if u need bike maintenance (Especially about single speed bike and fixed gear) :D.",
+                    "Aku seorang pendengar yang baik :D.",
+                ];
+                const randomFact = facts[Math.floor(Math.random() * facts.length)];
+                alert(randomFact);
+            });
+        </script>
+    </body>
+</html>
